@@ -1,0 +1,648 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /TF1/Tree1
+        - /Ez101
+        - /Ez201
+        - /GridCells1
+      Splitter Ratio: 0.5
+    Tree Height: 1097
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 2
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 100
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        bb1/base_link:
+          Value: true
+        bb1/car_body:
+          Value: true
+        bb1/floor_link:
+          Value: true
+        bb1/front_axle_link:
+          Value: true
+        bb1/front_left_wheel:
+          Value: true
+        bb1/front_right_wheel:
+          Value: true
+        bb1/ground_base_link:
+          Value: true
+        bb1/imu_link:
+          Value: true
+        bb1/rear_axle_link:
+          Value: true
+        bb1/rear_left_wheel:
+          Value: true
+        bb1/rear_right_wheel:
+          Value: true
+        bb1/top_link:
+          Value: true
+        bb2/base_link:
+          Value: true
+        bb2/car_body:
+          Value: true
+        bb2/floor_link:
+          Value: true
+        bb2/front_axle_link:
+          Value: true
+        bb2/front_left_wheel:
+          Value: true
+        bb2/front_right_wheel:
+          Value: true
+        bb2/ground_base_link:
+          Value: true
+        bb2/imu_link:
+          Value: true
+        bb2/rear_axle_link:
+          Value: true
+        bb2/rear_left_wheel:
+          Value: true
+        bb2/rear_right_wheel:
+          Value: true
+        bb2/top_link:
+          Value: true
+        ez10/base_link:
+          Value: true
+        ez10/camera_front:
+          Value: true
+        ez10/camera_rear:
+          Value: true
+        ez10/car_body:
+          Value: true
+        ez10/color_camera_front:
+          Value: true
+        ez10/floor_link:
+          Value: true
+        ez10/front_axle_link:
+          Value: true
+        ez10/front_left_wheel:
+          Value: true
+        ez10/front_right_wheel:
+          Value: true
+        ez10/gnss:
+          Value: true
+        ez10/ground_base_link:
+          Value: true
+        ez10/imu:
+          Value: true
+        ez10/imu_link:
+          Value: true
+        ez10/lidar_front:
+          Value: true
+        ez10/lidar_front_left:
+          Value: true
+        ez10/lidar_front_left_fov:
+          Value: true
+        ez10/lidar_front_right:
+          Value: true
+        ez10/lidar_front_right_fov:
+          Value: true
+        ez10/lidar_rear_left:
+          Value: true
+        ez10/lidar_rear_left_fov:
+          Value: true
+        ez10/lidar_rear_right:
+          Value: true
+        ez10/lidar_rear_right_fov:
+          Value: true
+        ez10/lidar_roof_front:
+          Value: true
+        ez10/lidar_roof_rear:
+          Value: true
+        ez10/ouster:
+          Value: true
+        ez10/radar_ars408_front_left:
+          Value: true
+        ez10/radar_ars408_front_right:
+          Value: true
+        ez10/rear_axle_link:
+          Value: true
+        ez10/rear_left_wheel:
+          Value: true
+        ez10/rear_right_wheel:
+          Value: true
+        ez10/roof_sensors_body:
+          Value: true
+        ez10/top_link:
+          Value: true
+        ez20/base_link:
+          Value: true
+        ez20/camera_front:
+          Value: true
+        ez20/camera_rear:
+          Value: true
+        ez20/car_body:
+          Value: true
+        ez20/color_camera_front:
+          Value: true
+        ez20/floor_link:
+          Value: true
+        ez20/front_axle_link:
+          Value: true
+        ez20/front_left_wheel:
+          Value: true
+        ez20/front_right_wheel:
+          Value: true
+        ez20/gnss:
+          Value: true
+        ez20/ground_base_link:
+          Value: true
+        ez20/imu:
+          Value: true
+        ez20/imu_link:
+          Value: true
+        ez20/lidar_front:
+          Value: true
+        ez20/lidar_front_left:
+          Value: true
+        ez20/lidar_front_left_fov:
+          Value: true
+        ez20/lidar_front_right:
+          Value: true
+        ez20/lidar_front_right_fov:
+          Value: true
+        ez20/lidar_rear_left:
+          Value: true
+        ez20/lidar_rear_left_fov:
+          Value: true
+        ez20/lidar_rear_right:
+          Value: true
+        ez20/lidar_rear_right_fov:
+          Value: true
+        ez20/lidar_roof_front:
+          Value: true
+        ez20/lidar_roof_rear:
+          Value: true
+        ez20/ouster:
+          Value: true
+        ez20/radar_ars408_front_left:
+          Value: true
+        ez20/radar_ars408_front_right:
+          Value: true
+        ez20/rear_axle_link:
+          Value: true
+        ez20/rear_left_wheel:
+          Value: true
+        ez20/rear_right_wheel:
+          Value: true
+        ez20/roof_sensors_body:
+          Value: true
+        ez20/top_link:
+          Value: true
+        map:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          bb1/base_link:
+            bb1/floor_link:
+              {}
+            bb1/ground_base_link:
+              bb1/car_body:
+                {}
+            bb1/imu_link:
+              {}
+            bb1/rear_axle_link:
+              bb1/front_axle_link:
+                bb1/front_left_wheel:
+                  {}
+                bb1/front_right_wheel:
+                  {}
+              bb1/rear_left_wheel:
+                {}
+              bb1/rear_right_wheel:
+                {}
+            bb1/top_link:
+              {}
+          bb2/base_link:
+            bb2/floor_link:
+              {}
+            bb2/ground_base_link:
+              bb2/car_body:
+                {}
+            bb2/imu_link:
+              {}
+            bb2/rear_axle_link:
+              bb2/front_axle_link:
+                bb2/front_left_wheel:
+                  {}
+                bb2/front_right_wheel:
+                  {}
+              bb2/rear_left_wheel:
+                {}
+              bb2/rear_right_wheel:
+                {}
+            bb2/top_link:
+              {}
+          ez10/base_link:
+            ez10/camera_front:
+              {}
+            ez10/camera_rear:
+              {}
+            ez10/car_body:
+              {}
+            ez10/color_camera_front:
+              {}
+            ez10/floor_link:
+              {}
+            ez10/front_axle_link:
+              ez10/front_left_wheel:
+                {}
+              ez10/front_right_wheel:
+                {}
+            ez10/ground_base_link:
+              {}
+            ez10/imu:
+              {}
+            ez10/imu_link:
+              {}
+            ez10/lidar_front:
+              {}
+            ez10/lidar_front_left:
+              ez10/lidar_front_left_fov:
+                {}
+            ez10/lidar_front_right:
+              ez10/lidar_front_right_fov:
+                {}
+            ez10/lidar_rear_left:
+              ez10/lidar_rear_left_fov:
+                {}
+            ez10/lidar_rear_right:
+              ez10/lidar_rear_right_fov:
+                {}
+            ez10/ouster:
+              {}
+            ez10/radar_ars408_front_left:
+              {}
+            ez10/radar_ars408_front_right:
+              {}
+            ez10/rear_axle_link:
+              ez10/rear_left_wheel:
+                {}
+              ez10/rear_right_wheel:
+                {}
+            ez10/top_link:
+              ez10/roof_sensors_body:
+                ez10/gnss:
+                  {}
+                ez10/lidar_roof_front:
+                  {}
+                ez10/lidar_roof_rear:
+                  {}
+          ez20/base_link:
+            ez20/camera_front:
+              {}
+            ez20/camera_rear:
+              {}
+            ez20/car_body:
+              {}
+            ez20/color_camera_front:
+              {}
+            ez20/floor_link:
+              {}
+            ez20/front_axle_link:
+              ez20/front_left_wheel:
+                {}
+              ez20/front_right_wheel:
+                {}
+            ez20/ground_base_link:
+              {}
+            ez20/imu:
+              {}
+            ez20/imu_link:
+              {}
+            ez20/lidar_front:
+              {}
+            ez20/lidar_front_left:
+              ez20/lidar_front_left_fov:
+                {}
+            ez20/lidar_front_right:
+              ez20/lidar_front_right_fov:
+                {}
+            ez20/lidar_rear_left:
+              ez20/lidar_rear_left_fov:
+                {}
+            ez20/lidar_rear_right:
+              ez20/lidar_rear_right_fov:
+                {}
+            ez20/ouster:
+              {}
+            ez20/radar_ars408_front_left:
+              {}
+            ez20/radar_ars408_front_right:
+              {}
+            ez20/rear_axle_link:
+              ez20/rear_left_wheel:
+                {}
+              ez20/rear_right_wheel:
+                {}
+            ez20/top_link:
+              ez20/roof_sensors_body:
+                ez20/gnss:
+                  {}
+                ez20/lidar_roof_front:
+                  {}
+                ez20/lidar_roof_rear:
+                  {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: /config/bb1.urdf
+      Description Source: File
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: ""
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        car_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        floor_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_axle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ground_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_axle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: Ez10
+      TF Prefix: bb1
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: /config/bb1-red.urdf
+      Description Source: File
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: ""
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        car_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        floor_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_axle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ground_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_axle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: Ez20
+      TF Prefix: bb2
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz_default_plugins/GridCells
+      Color: 255; 255; 127
+      Enabled: true
+      Name: GridCells
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /obstacles
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.06853891909122467
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 26.543554306030273
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: false
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.7853981852531433
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.7853981852531433
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1390
+  Hide Left Dock: false
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd000000040000000000000156000004d4fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005d00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003e000004d4000000cb00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c000002610000000100000100000004dbfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003b000004db000000a500fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000006a700000039fc0100000002fb0000000800540069006d00650100000000000006a70000026c00fffffffb0000000800540069006d006501000000000000045000000000000000000000054b000004d400000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1703
+  X: 1706
+  Y: 48

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<robot name="Blees BB1" vehicle_id="1" model_version="1">
+  <material name="car_ghost">
+    <color rgba="1. 1. 1. .6" />
+  </material>
+  <material name="car_wheel">
+    <color rgba="0. 0. 0. .7" />
+  </material>
+
+  <!-- =============== GEOMETRY =============== -->
+  <link name="base_link">
+  </link>
+
+  <link name="floor_link" >
+  </link>
+  <joint name="JOINT_floor_link" type="fixed">
+    <parent link="base_link" />
+    <child link="floor_link" />
+    <origin xyz="0.0 0.0 -0.105" />
+  </joint>
+
+  <link name="ground_base_link" >
+  </link>
+  <joint name="JOINT_ground_base_link" type="fixed">
+    <parent link="base_link" />
+    <child link="ground_base_link" />
+    <origin xyz="0.0 0.0 -0.354" />
+  </joint>
+
+  <link name="car_body">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///config/vbb1_body.fbx" scale=".01 .01 .01" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="5.1 2.1 2.81" />
+      </geometry>
+      <origin xyz="1.693 0.0 1.405" />
+    </collision>
+  </link>
+  <joint name="JOINT_car_body" type="fixed">
+    <parent link="ground_base_link" />
+    <child link="car_body" />
+    <origin xyz="0.0 -0.01 0.0" />
+  </joint>
+
+  <!-- Reference point for center front at roof -->
+  <link name="top_link" >
+  </link>
+  <joint name="JOINT_top_link" type="fixed">
+    <parent link="base_link" />
+    <child link="top_link" />
+    <origin xyz="3.56 0.0 2.436" rpy="0.0 0.0 0.0" />
+  </joint>
+
+  <!-- Axles -->
+  <link name="rear_axle_link">
+    <visual>
+      <origin xyz="0.0 0.0 -0.025" rpy="1.57079632679 0.0 0.0" />
+      <geometry>
+        <cylinder length="1.9" radius="0.03"/>
+      </geometry>
+      <material name="car_ghost" />
+    </visual>
+  </link>
+  <joint name="JOINT_rear_axle_link" type="fixed">
+    <parent link="base_link" />
+    <child link="rear_axle_link" />
+    <origin xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="front_axle_link">
+    <visual>
+      <origin xyz="0.0 0.0 -0.025" rpy="1.57079632679 0.0 0.0" />
+      <geometry>
+        <cylinder length="1.9" radius="0.03"/>
+      </geometry>
+      <material name="car_ghost" />
+    </visual>
+  </link>
+  <joint name="JOINT_front_axle_link" type="fixed">
+    <parent link="rear_axle_link" />
+    <child link="front_axle_link" />
+    <origin xyz="3.34 0.0 0.0" />
+  </joint>
+
+  <!-- Wheels -->
+  <link name="front_left_wheel">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 0.0 0.0" />
+      <geometry>
+        <cylinder length="0.207" radius="0.3542785"/>
+      </geometry>
+      <material name="car_wheel" />
+    </visual>
+  </link>
+  <joint name="JOINT_front_left_wheel" type="fixed">
+    <parent link="front_axle_link" />
+    <child link="front_left_wheel" />
+    <origin xyz="0.0 0.95 0.0" />
+  </joint>
+
+  <link name="front_right_wheel">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 0.0 0.0" />
+      <geometry>
+        <cylinder length="0.207" radius="0.3542785"/>
+      </geometry>
+      <material name="car_wheel" />
+    </visual>
+  </link>
+  <joint name="JOINT_front_right_wheel" type="fixed">
+    <parent link="front_axle_link" />
+    <child link="front_right_wheel" />
+    <origin xyz="0.0 -0.95 0.0" />
+  </joint>
+
+  <link name="rear_left_wheel">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 0.0 0.0" />
+      <geometry>
+        <cylinder length="0.207" radius="0.3542785"/>
+      </geometry>
+      <material name="car_wheel" />
+    </visual>
+  </link>
+  <joint name="JOINT_rear_left_wheel" type="fixed">
+    <parent link="rear_axle_link" />
+    <child link="rear_left_wheel" />
+    <origin xyz="0.0 0.95 0.0" />
+  </joint>
+
+  <link name="rear_right_wheel">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 0.0 0.0" />
+      <geometry>
+        <cylinder length="0.207" radius="0.3542785"/>
+      </geometry>
+      <material name="car_wheel" />
+    </visual>
+  </link>
+  <joint name="JOINT_back_right_wheel" type="fixed">
+    <parent link="rear_axle_link" />
+    <child link="rear_right_wheel" />
+    <origin xyz="0.0 -0.95 0.0" />
+  </joint>
+</robot>
