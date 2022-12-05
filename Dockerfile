@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
         wget \
         python3-pip \
     && rm -rf /var/lib/apt/lists/*
-RUN pip3 install transforms3d
+RUN pip3 install transforms3d pick
 
 RUN mkdir -p /ws/src
 WORKDIR /ws
@@ -28,4 +28,4 @@ RUN sed --in-place --expression \
       '$isource "$OVERLAY_WS/install/setup.bash"' \
       /ros_entrypoint.sh
 
-CMD ["ros2", "launch", "/config/tools_launch.py"]
+CMD ["/config/menu.py"]

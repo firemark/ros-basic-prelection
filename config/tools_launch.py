@@ -7,7 +7,9 @@ def generate_launch_description():
     return LaunchDescription(
         [
             ExecuteProcess(
-                name="rviz", cmd=["ros2", "run", "rviz2", "rviz2", "-d", "/config/rviz.rviz"], output="log"
+                name="rviz",
+                cmd=["ros2", "run", "rviz2", "rviz2", "-d", "/config/rviz.rviz"],
+                output="log",
             ),
             ExecuteProcess(
                 name="plotjugger",

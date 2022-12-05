@@ -5,25 +5,25 @@ from tf2_ros import Buffer, TransformException, TransformListener
 from .tf2_geometry_msgs import do_transform_point
 
 from std_msgs.msg import Float32
-from visualization_msgs.msg import Marker
+from nav_msgs.msg import GridCells
 from geometry_msgs.msg import TransformStamped, PointStamped
 
 
 class AutonomyControllerNode(Node):
     def __init__(self):
         super().__init__("autonomy_controller")
-        self.vehicle_name = self.declare_parameter("vehicle_name", "ez10").value
+        self.vehicle_name = self.declare_parameter("vehicle_name", "bb1").value
         self._velocity_publisher = self.create_publisher(
             Float32, f"vehicle/{self.vehicle_name}/declare_velocity", 1
         )
         self._obstacle_subscription = self.create_subscription(
-            Marker, "obstacles", self.callback, 1
+            GridCells, "obstacles", self.callback, 1
         )
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         print("START")
 
-    def callback(self, msg: Marker):
+    def callback(self, msg: GridCells):
         transform = self.find_transformation()
         if transform is None:
             return
@@ -47,20 +47,20 @@ class AutonomyControllerNode(Node):
 
     def check_obstacles(
         self,
-        msg: Marker,
+        msg: GridCells,
         transform: TransformStamped,
         tunnel_width=5.0,
-        safe_distance=12.0,
+        safe_distance=30.0,
     ) -> bool:
         def do_transform(p):
             stamped = PointStamped()
             stamped.header = transform.header
             stamped.point = p
-            return do_transform_point(stamped, transform)
+            return do_transform_point(stamped, transform).point
 
-        points = map(do_transform, msg.points)
-        tunnel_points = (p for p in points if abs(p.point.y) < tunnel_width)
-        return any(0.0 < p.point.x < safe_distance for p in tunnel_points)
+        points = map(do_transform, msg.cells)
+        tunnel_points = (p for p in points if abs(p.y) < tunnel_width)
+        return any(0.0 < p.x < safe_distance for p in tunnel_points)
 
 
 def main(args=None):
