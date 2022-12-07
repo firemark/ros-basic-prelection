@@ -19,9 +19,6 @@ COPY code_prelection /ws/src/code_prelection
 RUN wget https://raw.githubusercontent.com/ros2/geometry2/ros2/tf2_geometry_msgs/src/tf2_geometry_msgs/tf2_geometry_msgs.py -O /ws/src/code_prelection/code_prelection/tf2_geometry_msgs.py
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh && colcon build
 
-ENV NVIDIA_VISIBLE_DEVICES all
-ENV NVIDIA_DRIVER_CAPABILITIES graphics,utility,compute
-
 # source entrypoint setup
 ENV OVERLAY_WS /ws
 RUN sed --in-place --expression \

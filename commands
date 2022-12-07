@@ -1,8 +1,0 @@
-./build.sh
-./run.sh ros2 launch /config/tools_launch.py > /dev/null
-./run.sh ros2 launch /config/vehicle_launch.py -- -- vehicle_name:=bb1 y:=+5.0
-./run.sh ros2 launch /config/vehicle_launch.py -- -- vehicle_name:=bb2 y:=-5.0
-./run.sh ros2 topic list
-./run.sh ros2 topic echo /vehicle/bb1/velocity
-./run.sh ros2 topic pub --once /vehicle/bb1/declare_velocity std_msgs/msg/Float32 '{data: 5}'
-CMD ["ros2", "launch", "/config/tools_launch.py"]

@@ -61,7 +61,7 @@ class VehicleNode(Node):
             res.success = False
             res.message = "new state is already set"
             return res
-        sleep(1)  # Blocking service and node - for example.
+        sleep(5)  # Blocking service and node - for example.
         self.door_state = new_state
         res.success = True
         res.message = "OK"
